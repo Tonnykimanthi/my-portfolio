@@ -20,15 +20,21 @@ const About = () => {
         Bulding Websites, from Frontend to Backend.
       </p>
       <div className="mt-2 space-x-2">
-        <button className="rounded-full border border-dark bg-dark p-2 text-light transition hover:bg-transparent hover:text-dark">
-          <FaLinkedinIn className="size-6" />
-        </button>
-        <button className="rounded-full border border-dark bg-dark p-2 text-light transition hover:bg-transparent hover:text-dark">
-          <FaGithub className="size-6" />
-        </button>
-        <button className="rounded-full border border-dark bg-dark p-2 text-light transition hover:bg-transparent hover:text-dark">
-          <FaXTwitter className="size-6" />
-        </button>
+        <Link href="#">
+          <button className="rounded-full border border-dark bg-dark p-2 text-light transition hover:bg-transparent hover:text-dark">
+            <FaLinkedinIn className="size-6" />
+          </button>
+        </Link>
+        <Link href="#">
+          <button className="rounded-full border border-dark bg-dark p-2 text-light transition hover:bg-transparent hover:text-dark">
+            <FaGithub className="size-6" />
+          </button>
+        </Link>
+        <Link href="#">
+          <button className="rounded-full border border-dark bg-dark p-2 text-light transition hover:bg-transparent hover:text-dark">
+            <FaXTwitter className="size-6" />
+          </button>
+        </Link>
       </div>
     </section>
   );
