@@ -23,7 +23,7 @@ const Header = () => {
         <RiMenu3Fill className="size-8" />
       </button>
       <nav
-        className={`inset-0 origin-top-right font-medium transition max-sm:absolute max-sm:bg-dark max-sm:text-light ${navIsOpen ? "max-sm:scale-100" : "max-sm:scale-0"}`}
+        className={`inset-0 z-10 origin-top-right font-medium transition max-sm:absolute max-sm:bg-dark max-sm:text-light ${navIsOpen ? "max-sm:scale-100" : "max-sm:scale-0"}`}
       >
         <button
           className="absolute right-8 top-8 rounded-full p-1.5 hover:bg-light/20 sm:hidden"

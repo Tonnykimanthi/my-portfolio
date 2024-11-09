@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const About = () => {
   return (
     <section className="mt-10 flex flex-col items-center font-medium">
-      <div className="h-32 w-32 overflow-hidden rounded-full">
+      <div className="h-32 w-32 overflow-hidden rounded-full max-sm:w-28 max-sm:h-28">
         <img
           className="size-full object-cover"
           src="https://plus.unsplash.com/premium_photo-1683140621573-233422bfc7f1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
@@ -16,7 +16,7 @@ const About = () => {
         />
       </div>
       <p className="mt-2 rounded-full bg-white px-4 py-2">Tonny Kimanthi</p>
-      <p className="max-w-lg text-center text-3xl">
+      <p className="max-w-lg text-center text-3xl max-sm:text-2xl">
         Bulding Websites, from Frontend to Backend.
       </p>
       <div className="mt-2 space-x-2">
