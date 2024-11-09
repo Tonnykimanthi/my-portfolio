@@ -10,6 +10,9 @@ export default function Home() {
       <Hr title="Skills"/>
 
       <Skills />
+
+      <Hr title="Projects"/>
+
     </div>
   );
 }
