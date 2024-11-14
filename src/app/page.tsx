@@ -1,5 +1,6 @@
 import Hr from "./components/Hr";
 import About from "./ui/About";
+import Projects from "./ui/Projects";
 import Skills from "./ui/Skills";
 
 export default function Home() {
@@ -8,10 +9,11 @@ export default function Home() {
       <About />
 
       <Hr title="Skills"/>
-
       <Skills />
 
+
       <Hr title="Projects"/>
+      <Projects />
 
     </div>
   );
