@@ -8,8 +8,11 @@ import { FaArrowRight } from "react-icons/fa";
 const Projects = () => {
   return (
     <section className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
-      {projectsList.map((project) => (
-        <div className="group overflow-hidden rounded-lg bg-white shadow shadow-primary/50 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20">
+      {projectsList.map((project, index) => (
+        <div
+          key={index}
+          className="group overflow-hidden rounded-lg bg-white shadow shadow-primary/50 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20"
+        >
           <div className="h-52">
             <Image
               src={project.imgURL}
