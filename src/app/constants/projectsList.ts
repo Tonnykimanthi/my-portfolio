@@ -17,9 +17,9 @@ export const projectsList = [
     stack: "React | Typescript | Tailwind CSS",
   },
   {
-    name: "Recipe App",
-    linkURL: "https://recipe-app-flame.vercel.app/",
+    name: "Foodie App",
+    linkURL: "https://foodie-app-lac.vercel.app/",
     imgURL: RecipeApp,
-    stack: "Javascript | Tailwind CSS",
+    stack: "Next.js | Typescript | Tailwind CSS",
   },
 ];
