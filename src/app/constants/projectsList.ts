@@ -18,7 +18,7 @@ export const projectsList = [
   },
   {
     name: "Foodie App",
-    linkURL: "https://foodie-app-lac.vercel.app/",
+    linkURL: "https://foodie-app-phi.vercel.app/",
     imgURL: RecipeApp,
     stack: "Next.js | Typescript | Tailwind CSS",
   },
