@@ -19,7 +19,7 @@ const About = () => {
           className="size-full object-cover"
         />
       </div>
-      <p className="mt-2 rounded-full bg-white px-4 py-2">Tonny Kimanthi</p>
+      <p className="mt-2 rounded-full bg-primary text-white uppercase px-4 py-2">Tonny Kimanthi</p>
       <p className="max-w-lg text-center text-3xl max-sm:text-2xl">
         Bulding Websites, from Frontend to Backend.
       </p>
