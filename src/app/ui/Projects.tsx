@@ -7,11 +7,11 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
+    <section className="grid grid-cols-3 gap-5 text-light max-lg:grid-cols-2 max-sm:grid-cols-1">
       {projectsList.map((project, index) => (
         <div
           key={index}
-          className="group overflow-hidden rounded-lg bg-white shadow shadow-primary/50 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20"
+          className="group overflow-hidden rounded-lg bg-dark shadow shadow-primary/50 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/50"
         >
           <div className="h-52">
             <Image
@@ -24,7 +24,7 @@ const Projects = () => {
             <Link
               href={project.linkURL}
               target="_blank"
-              className="group/link flex w-fit items-center gap-x-1.5 text-lg font-medium text-primary"
+              className="group/link flex w-fit items-center gap-x-1.5 text-lg font-medium text-accent"
             >
               <h3>{project.name}</h3>
               <FaArrowRight className="transition group-hover/link:translate-x-1" />

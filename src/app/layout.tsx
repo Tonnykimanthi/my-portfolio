@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-light p-5 text-dark antialiased`}>
+      <body
+        className={`bg-light bg-[url('/animatedBg.svg')] p-5 text-dark antialiased`}
+      >
         <Header />
         {children}
       </body>

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="mt-10 flex flex-col items-center font-medium">
+    <section className="mt-10 flex flex-col items-center font-medium text-white">
       <div className="h-40 w-40 overflow-hidden rounded-full max-sm:h-28 max-sm:w-28">
         <Image
           src={MyImage}
@@ -19,7 +19,9 @@ const About = () => {
           className="size-full object-cover"
         />
       </div>
-      <p className="mt-2 rounded-full bg-primary text-white uppercase px-4 py-2">Tonny Kimanthi</p>
+      <p className="my-2 rounded-full bg-primary px-4 py-2 text-lg uppercase">
+        Tonny Kimanthi
+      </p>
       <p className="max-w-lg text-center text-3xl max-sm:text-2xl">
         Bulding Websites, from Frontend to Backend.
       </p>

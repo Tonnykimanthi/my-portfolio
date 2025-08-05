@@ -11,7 +11,7 @@ type Skill = {
 
 const Skills = () => {
   return (
-    <section className="scroller flex gap-x-10 overflow-hidden rounded-full bg-white p-5">
+    <section className="scroller flex gap-x-10 overflow-hidden rounded-full text-light p-5">
       <div className="scroller-primary flex items-center gap-x-10 text-xl font-medium [&>div]:shrink-0">
         {skillsList.map((skill: Skill, index: number) => (
           <div key={index} className="flex items-center">
