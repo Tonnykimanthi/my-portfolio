@@ -13,20 +13,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
 // Animations
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-gsap.registerPlugin(useGSAP, ScrambleTextPlugin);
 
 const About = () => {
   const headerText = useRef(null);
-
-  useGSAP(() => {
-    gsap.to(headerText.current, {
-      duration: 1,
-      scrambleText: "Bulding Websites, from Frontend to Backend.",
-    });
-  }, []);
 
   return (
     <section className="mt-10 flex flex-col items-center font-medium text-white">
