@@ -7,11 +7,18 @@ import { useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
+// Motion
+import { motion } from "motion/react";
+
 const Header = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
   return (
     <header className="flex items-center justify-between">
-      <div className="space-x-5">
+      <motion.div
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        className="space-x-5"
+      >
         <a href="mailto:tonnykimanthi9@gmail.com">
           <button className="rounded-full border border-primary bg-primary px-4 py-2 text-light transition hover:shadow-lg hover:shadow-primary/50">
             EMAIL
@@ -22,7 +29,7 @@ const Header = () => {
             CV
           </button>
         </a>
-      </div>
+      </motion.div>
       <button className="sm:hidden" onClick={() => setNavIsOpen(true)}>
         <RiMenu3Fill className="size-8" />
       </button>
