@@ -1,6 +1,4 @@
 "use client";
-
-import { useRef } from "react";
 import Link from "next/link";
 
 // Images
@@ -13,12 +11,16 @@ import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
 // Animations
+import { motion } from "motion/react";
 
 const About = () => {
-  const headerText = useRef(null);
-
   return (
-    <section className="mt-10 flex flex-col items-center font-medium text-white">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="mt-10 flex flex-col items-center font-medium text-white"
+    >
       <div className="h-40 w-40 overflow-hidden rounded-full max-sm:h-28 max-sm:w-28">
         <Image
           src={MyImage}
@@ -29,10 +31,7 @@ const About = () => {
       <p className="my-2 rounded-full bg-primary px-4 py-2 text-lg uppercase">
         Tonny Kimanthi
       </p>
-      <p
-        className="max-w-lg text-center text-3xl max-sm:text-2xl"
-        ref={headerText}
-      >
+      <p className="max-w-lg text-center text-3xl max-sm:text-2xl">
         Bulding Websites, from Frontend to Backend.
       </p>
       <div className="mt-2 space-x-2">
@@ -52,7 +51,7 @@ const About = () => {
           </button>
         </Link>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

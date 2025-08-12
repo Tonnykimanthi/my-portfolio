@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`bg-light bg-[url('/animatedBg.svg')] p-5 text-dark antialiased`}
       >
